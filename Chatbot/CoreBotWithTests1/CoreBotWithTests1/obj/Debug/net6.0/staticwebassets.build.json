@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "8/+d83JZzzMSKZFXvLZc304t+7FrVRBZzv8haFFHCPs=",
+  "Source": "CoreBotWithTests1",
+  "BasePath": "_content/CoreBotWithTests1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CoreBotWithTests1\\wwwroot",
+      "Source": "CoreBotWithTests1",
+      "ContentRoot": "C:\\Users\\Haroon\\Documents\\GitHub\\CO659-TeamApp\\Chatbot\\CoreBotWithTests1\\CoreBotWithTests1\\wwwroot\\",
+      "BasePath": "_content/CoreBotWithTests1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Haroon\\Documents\\GitHub\\CO659-TeamApp\\Chatbot\\CoreBotWithTests1\\CoreBotWithTests1\\wwwroot\\default.htm",
+      "SourceId": "CoreBotWithTests1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Haroon\\Documents\\GitHub\\CO659-TeamApp\\Chatbot\\CoreBotWithTests1\\CoreBotWithTests1\\wwwroot\\",
+      "BasePath": "_content/CoreBotWithTests1",
+      "RelativePath": "default.htm",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\default.htm"
+    }
+  ]
+}
