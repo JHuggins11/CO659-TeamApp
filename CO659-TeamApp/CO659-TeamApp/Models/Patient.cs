@@ -51,8 +51,8 @@ namespace CO659_TeamApp.Models
             }
         }
 
-        public ICollection<Account> Account { get; set; }
-        public ICollection<Practitioner> Practitioner { get; set; }
+        public virtual ICollection<Account> Account { get; set; }
+        public virtual ICollection<Practitioner> Practitioner { get; set; }
 
     }
 }

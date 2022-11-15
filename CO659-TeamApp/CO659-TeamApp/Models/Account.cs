@@ -15,7 +15,7 @@ namespace CO659_TeamApp.Models
         [DisplayName("Password"), MinLength(5), StringLength(30)]
         public string AccountPassword { get; set; }
 
-
+        // ToDo: Check this works
         [DisplayName("Account Level")]
         public int AccountLevel { get; set; }
     }

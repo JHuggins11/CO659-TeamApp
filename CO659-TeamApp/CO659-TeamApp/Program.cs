@@ -1,6 +1,7 @@
-using CO659_TeamApp.Data;
+﻿using CO659_TeamApp.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,8 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<PatientContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("PatientContext") ?? throw new InvalidOperationException("Connection string 'PatientContext' not found.")));
 
 var app = builder.Build();
 

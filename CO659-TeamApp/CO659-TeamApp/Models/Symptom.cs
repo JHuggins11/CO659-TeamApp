@@ -3,6 +3,18 @@ using System.ComponentModel;
 
 namespace CO659_TeamApp.Models
 {
+
+    public enum SymptomSeverity
+    {
+        [Display(Name = "mild")]
+        mild,
+        [Display(Name = "regular")]
+        regular,
+        [Display(Name = "severe")]
+        severe,
+        [Display(Name = "other")]
+        other
+    }
     public class Symptom
     {
         public int ID { get; set; }
@@ -20,7 +32,6 @@ namespace CO659_TeamApp.Models
         public string SymptomDetails { get; set; }
 
 
-        [DisplayName("Symptom Severuty"), MaxLength(1)]
-        public int SymptomSeverity { get; set; }
+        public SymptomSeverity? SymptomSeverity { get; set; }
     }
 }
