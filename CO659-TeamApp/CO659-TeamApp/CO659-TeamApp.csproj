@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <!-- <Nullable>enable</Nullable> -->
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-CO659_TeamApp-2563022F-2D89-4D56-BBC9-77E36E576A27</UserSecretsId>
     <RootNamespace>CO659_TeamApp</RootNamespace>
