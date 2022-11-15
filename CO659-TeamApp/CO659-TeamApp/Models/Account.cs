@@ -8,11 +8,11 @@ namespace CO659_TeamApp.Models
         public int ID { get; set; }
 
 
-        [DisplayName("Email"), StringLength(30)]
+        [DisplayName("Email"), MinLength(5), StringLength(30)]
         public string AccountEmail { get; set; }
 
 
-        [DisplayName("Password"), StringLength(30)]
+        [DisplayName("Password"), MinLength(5), StringLength(30)]
         public string AccountPassword { get; set; }
 
 

@@ -30,5 +30,25 @@ namespace CO659_TeamApp.Models
         public int ApptLength { get; set; }
 
 
+        public string FullBooking
+        {
+            get
+            {
+                return BookingTime + (" ") + BookingDate;
+            }
+        }
+
+        public string FullAppt
+        {
+            get
+            {
+                return ApptTime + (" ") + ApptDate;
+            }
+        }
+
+
+        public ICollection<Patient> Patient { get; set; }
+
+        public ICollection<Practitioner> Practitioner { get; set; }
     }
 }
