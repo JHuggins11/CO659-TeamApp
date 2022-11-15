@@ -7,6 +7,7 @@ namespace CO659_TeamApp.Models
     {
         public int ID { get; set; }
 
+
         [DisplayName("First Name"), StringLength(20)]
         public string PatientFName { get; set; }
 
@@ -35,11 +36,11 @@ namespace CO659_TeamApp.Models
         public string AddressTownCity { get; set; }
 
 
-        [DisplayName("Postcode"), StringLength(8)]
+        [DisplayName("Postcode"), MinLength(5), StringLength(8)]
         public string AddressPostcode { get; set; }
 
 
-        [DisplayName("Mobile"), Required, StringLength(15)]
+        [DisplayName("Mobile"), Required, MinLength(11), StringLength(15)]
         public string MobileNumber { get; set; }
 
         public string FullName

@@ -7,6 +7,7 @@ namespace CO659_TeamApp.Models
     {
         public int ID { get; set; }
 
+
         [DisplayName("First Name"), StringLength(20)]
         public string PractitionerFName { get; set; }
 
@@ -31,6 +32,6 @@ namespace CO659_TeamApp.Models
             }
         }
 
-        public ICollection<AccountID> AccountID { get; set; }
+        public ICollection<Account> Account { get; set; }
     }
 }
