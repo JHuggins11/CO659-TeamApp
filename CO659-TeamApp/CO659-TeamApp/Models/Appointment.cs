@@ -34,7 +34,7 @@ namespace CO659_TeamApp.Models
 
 
         [DisplayName("Booking Time"), DataType(DataType.Date)]
-        public DateTime BookingTime { get; set; }
+        public TimeOnly BookingTime { get; set; }
 
 
 
@@ -43,7 +43,7 @@ namespace CO659_TeamApp.Models
 
 
         [DisplayName("Appointment Time"), DataType(DataType.Date)]
-        public DateTime ApptTime { get; set; }
+        public TimeOnly ApptTime { get; set; }
 
 
         public ApptLengths? ApptLength { get; set; }
