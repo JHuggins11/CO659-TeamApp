@@ -4,7 +4,7 @@ using System.ComponentModel;
 namespace CO659_TeamApp.Models
 {
 
-    public enum SymptomSeverity
+    public enum SymptomSeverities
     {
         [Display(Name = "mild")]
         mild,
@@ -32,6 +32,6 @@ namespace CO659_TeamApp.Models
         public string SymptomDetails { get; set; }
 
 
-        public SymptomSeverity? SymptomSeverity { get; set; }
+        public SymptomSeverities? SymptomSeverity { get; set; }
     }
 }

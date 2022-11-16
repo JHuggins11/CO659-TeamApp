@@ -4,7 +4,7 @@ using System.ComponentModel;
 namespace CO659_TeamApp.Models
 {
 
-    public enum ApptLength
+    public enum ApptLengths
     {
         [Display(Name = "10 minutes")]
         ten,
@@ -46,7 +46,7 @@ namespace CO659_TeamApp.Models
         public DateTime ApptTime { get; set; }
 
 
-        public ApptLength? ApptLength { get; set; }
+        public ApptLengths? ApptLength { get; set; }
 
 
         public string FullBooking
@@ -65,9 +65,8 @@ namespace CO659_TeamApp.Models
             }
         }
 
-
-        public ICollection<Patient> Patient { get; set; }
-
-        public ICollection<Practitioner> Practitioner { get; set; }
+        //// ToDo: is this needed?
+        //public virtual Patient Patient { get; set; }
+        //public virtual Practitioner Practitioner { get; set; }
     }
 }

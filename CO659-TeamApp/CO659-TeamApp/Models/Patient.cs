@@ -29,7 +29,7 @@ namespace CO659_TeamApp.Models
 
 
         [DisplayName("Address Line 2"), StringLength(20)]
-        public string? AddressLineTwo { get; set; }
+        public string AddressLineTwo { get; set; }
 
 
         [DisplayName("Town / City"), StringLength(20)]
@@ -51,8 +51,10 @@ namespace CO659_TeamApp.Models
             }
         }
 
-        public virtual ICollection<Account> Account { get; set; }
-        public virtual ICollection<Practitioner> Practitioner { get; set; }
+        public virtual Account Account { get; set; }
+
+        public virtual ICollection<Prescription> Prescriptions { get; set; }
+        public virtual ICollection<Appointment> Appointments { get; set; }
 
     }
 }

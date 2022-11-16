@@ -18,5 +18,9 @@ namespace CO659_TeamApp.Models
         // ToDo: Check this works
         [DisplayName("Account Level")]
         public int AccountLevel { get; set; }
+
+        // ToDo: is this needed?
+        //public virtual Patient Patient { get; set; }
+        //public virtual Practitioner Practitioner { get; set; }  
     }
 }

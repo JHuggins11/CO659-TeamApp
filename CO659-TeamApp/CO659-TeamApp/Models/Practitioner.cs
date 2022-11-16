@@ -5,7 +5,7 @@ namespace CO659_TeamApp.Models
 {
 
 
-    public enum PractitionerTitle
+    public enum PractitionerTitles
     {
         [Display(Name = "Consultant")]
         consultant,
@@ -29,7 +29,7 @@ namespace CO659_TeamApp.Models
         other
     }
 
-    public enum PractitionerDept
+    public enum PractitionerDepts
     {
         [Display(Name = "Consultancy")]
         consultancy,
@@ -60,8 +60,8 @@ namespace CO659_TeamApp.Models
 
 
 
-        public PractitionerTitle? PractitionerTitle { get; set; }
-        public PractitionerDept? PractitionerDept { get; set; }
+        public PractitionerTitles? PractitionerTitle { get; set; }
+        public PractitionerDepts? PractitionerDept { get; set; }
 
 
         public string FullName
@@ -72,6 +72,11 @@ namespace CO659_TeamApp.Models
             }
         }
 
-        public ICollection<Account> Account { get; set; }
+        public virtual Account Account { get; set; }
+
+        public virtual ICollection<Patient> Patients { get; set; }
+
+        public virtual ICollection<Prescription> Prescriptions { get; set; }
+        public virtual ICollection<Appointment> Appointments { get; set; }
     }
 }

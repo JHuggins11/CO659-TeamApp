@@ -36,11 +36,10 @@ namespace CO659_TeamApp.Models
             }
         }
 
-        public ICollection<Patient> Patient { get; set; }
+        //public virtual Patient Patient { get; set; }
+        //public virtual Practitioner Practitioner { get; set; }
 
-        public ICollection<Practitioner> Practitioner { get; set; }
-
-        public ICollection<Medicine> Medicine { get; set; }
+        public virtual ICollection<Medicine> Medicines { get; set; }
 
     }
 }

@@ -26,5 +26,6 @@ namespace CO659_TeamApp.Models
 
         [DisplayName("Medicine Availability")]
         public bool? IsAvailable { get; set; }
+
     }
 }
