@@ -1,0 +1,43 @@
+﻿@page
+@model CO659_TeamApp.Pages.Symptoms.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Symptom</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Symptom.SymptomName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Symptom.SymptomName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Symptom.SymptomType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Symptom.SymptomType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Symptom.SymptomDetails)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Symptom.SymptomDetails)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Symptom.SymptomSeverity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Symptom.SymptomSeverity)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Symptom?.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

@@ -1,0 +1,45 @@
+﻿@page
+@model CO659_TeamApp.Pages.Accounts.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Account</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Account.ID" />
+            <div class="form-group">
+                <label asp-for="Account.AccountEmail" class="control-label"></label>
+                <input asp-for="Account.AccountEmail" class="form-control" />
+                <span asp-validation-for="Account.AccountEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.AccountPassword" class="control-label"></label>
+                <input asp-for="Account.AccountPassword" class="form-control" />
+                <span asp-validation-for="Account.AccountPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.AccountLevel" class="control-label"></label>
+                <input asp-for="Account.AccountLevel" class="form-control" />
+                <span asp-validation-for="Account.AccountLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
