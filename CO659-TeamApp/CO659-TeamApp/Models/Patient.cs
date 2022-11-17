@@ -5,38 +5,39 @@ namespace CO659_TeamApp.Models
 {
     public class Patient
     {
+        [Key]
         public int ID { get; set; }
 
 
-        [DisplayName("First Name"), StringLength(20)]
+        [DisplayName("First Name"), StringLength(20), Required]
         public string PatientFName { get; set; }
 
 
-        [DisplayName("Last Name"), StringLength(20)]
+        [DisplayName("Last Name"), StringLength(20), Required]
         public string PatientLName { get; set; }
 
 
-        [DisplayName("DOB"), DataType(DataType.Date)]
+        [DisplayName("DOB"), DataType(DataType.Date), Required]
         public DateTime PatientDOB { get; set; }
 
 
-        [DisplayName("House Number"), StringLength(5)]
+        [DisplayName("House Number"), StringLength(5), Required]
         public string AddressHouseNo { get; set; }
 
 
-        [DisplayName("Street"), StringLength(20)]
+        [DisplayName("Street"), StringLength(20), Required]
         public string AddressStreet { get; set; }
 
 
-        [DisplayName("Address Line 2"), StringLength(20)]
+        [DisplayName("Address Line 2 [optional]"), StringLength(20)]
         public string AddressLineTwo { get; set; }
 
 
-        [DisplayName("Town / City"), StringLength(20)]
+        [DisplayName("Town / City"), StringLength(20), Required]
         public string AddressTownCity { get; set; }
 
 
-        [DisplayName("Postcode"), MinLength(5), StringLength(8)]
+        [DisplayName("Postcode"), MinLength(5), StringLength(8), Required]
         public string AddressPostcode { get; set; }
 
 
@@ -51,6 +52,7 @@ namespace CO659_TeamApp.Models
             }
         }
 
+        // Navigation properties
         public virtual Account Account { get; set; }
 
         public virtual ICollection<Prescription> Prescriptions { get; set; }

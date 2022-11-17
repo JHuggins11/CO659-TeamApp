@@ -7,14 +7,15 @@ namespace CO659_TeamApp.Models
 {
     public class Prescription
     {
+        [Key]
         public int ID { get; set; }
 
 
-        [DisplayName("Prescription Order Date"), DataType(DataType.Date)]
+        [DisplayName("Prescription Order Date"), DataType(DataType.Date), Required]
         public DateTime PrescriptionDate { get; set; }
 
 
-        [DisplayName("Prescription Order Time"), DataType(DataType.Date)]
+        [DisplayName("Prescription Order Time"), DataType(DataType.Date), Required]
         public DateTime PrescriptionTime { get; set; }
 
 
@@ -23,7 +24,7 @@ namespace CO659_TeamApp.Models
         public decimal PrescriptionPrice { get; set; }
 
 
-        [DisplayName("Qty"), MaxLength(3)]
+        [DisplayName("Qty"), MaxLength(3), Required]
         public int PrescriptionQty { get; set; }
 
 
@@ -35,6 +36,9 @@ namespace CO659_TeamApp.Models
                 return (int)(PrescriptionQty * PrescriptionPrice);
             }
         }
+
+
+        // Navigation properties
 
         //public virtual Patient Patient { get; set; }
         //public virtual Practitioner Practitioner { get; set; }

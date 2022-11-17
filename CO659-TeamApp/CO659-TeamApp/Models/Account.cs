@@ -5,18 +5,19 @@ namespace CO659_TeamApp.Models
 {
     public class Account
     {
+        [Key]
         public int ID { get; set; }
 
 
-        [DisplayName("Email"), MinLength(5), StringLength(30)]
+        [DisplayName("Email"), MinLength(5), StringLength(30), Required]
         public string AccountEmail { get; set; }
 
 
-        [DisplayName("Password"), MinLength(5), StringLength(30)]
+        [DisplayName("Password"), MinLength(5), StringLength(30), Required]
         public string AccountPassword { get; set; }
 
         // ToDo: Check this works
-        [DisplayName("Account Level")]
+        [DisplayName("Account Level"), Required]
         public int AccountLevel { get; set; }
 
         // ToDo: is this needed?

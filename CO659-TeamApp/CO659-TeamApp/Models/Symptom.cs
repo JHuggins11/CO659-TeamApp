@@ -15,20 +15,22 @@ namespace CO659_TeamApp.Models
         [Display(Name = "other")]
         other
     }
+
     public class Symptom
     {
+        [Key]
         public int ID { get; set; }
 
 
-        [DisplayName("Symptom Name"), StringLength(20)]
+        [DisplayName("Symptom Name"), StringLength(20), Required]
         public string SymptomName { get; set; }
 
 
-        [DisplayName("Symptom Type"), StringLength(20)]
+        [DisplayName("Symptom Type"), StringLength(20), Required]
         public string SymptomType { get; set; }
 
 
-        [DisplayName("Symptom Details"), StringLength(200)]
+        [DisplayName("Symptom Details"), StringLength(200), Required]
         public string SymptomDetails { get; set; }
 
 

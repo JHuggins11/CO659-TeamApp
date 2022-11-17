@@ -48,14 +48,15 @@ namespace CO659_TeamApp.Models
     }
     public class Practitioner
     {
+        [Key]
         public int ID { get; set; }
 
 
-        [DisplayName("First Name"), StringLength(20)]
+        [DisplayName("First Name"), StringLength(20), Required]
         public string PractitionerFName { get; set; }
 
 
-        [DisplayName("Last Name"), StringLength(20)]
+        [DisplayName("Last Name"), StringLength(20), Required]
         public string PractitionerLName { get; set; }
 
 
@@ -72,6 +73,7 @@ namespace CO659_TeamApp.Models
             }
         }
 
+        // Navigation properties
         public virtual Account Account { get; set; }
 
         public virtual ICollection<Patient> Patients { get; set; }
