@@ -10291,19 +10291,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\isabe\\.nuget\\packages\\": {}
+    "C:\\Users\\jason\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repos\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp.csproj",
+      "projectUniqueName": "D:\\Documents\\BNU\\Year 3\\CO659 - Enterprise Systems Development\\Local Repository\\JHuggins11\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp.csproj",
       "projectName": "CO659-TeamApp",
-      "projectPath": "C:\\repos\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp.csproj",
-      "packagesPath": "C:\\Users\\isabe\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\obj\\",
+      "projectPath": "D:\\Documents\\BNU\\Year 3\\CO659 - Enterprise Systems Development\\Local Repository\\JHuggins11\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp.csproj",
+      "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
+      "outputPath": "D:\\Documents\\BNU\\Year 3\\CO659 - Enterprise Systems Development\\Local Repository\\JHuggins11\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\isabe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
