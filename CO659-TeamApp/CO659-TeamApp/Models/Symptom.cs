@@ -3,6 +3,7 @@ using System.ComponentModel;
 
 namespace CO659_TeamApp.Models
 {
+    // testing git commit
 
     public enum SymptomSeverities
     {
