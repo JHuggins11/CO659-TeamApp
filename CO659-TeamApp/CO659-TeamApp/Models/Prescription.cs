@@ -15,8 +15,8 @@ namespace CO659_TeamApp.Models
         public DateTime PrescriptionDate { get; set; }
 
 
-        [DisplayName("Prescription Order Time"), DataType(DataType.Date), Required]
-        public DateTime PrescriptionTime { get; set; }
+        //[DisplayName("Prescription Order Time"), DataType(DataType.Date), Required]
+        //public DateTime PrescriptionTime { get; set; }
 
 
         [DisplayName("Prescription Price"), Required, DataType(DataType.Currency)]
