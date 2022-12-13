@@ -3,6 +3,8 @@ using System.ComponentModel;
 
 namespace CO659_TeamApp.Models
 {
+
+    // TODO: Remove Account 
     public class Account
     {
         [Key]

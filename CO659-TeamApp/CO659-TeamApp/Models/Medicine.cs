@@ -3,6 +3,8 @@ using System.ComponentModel;
 
 namespace CO659_TeamApp.Models
 {
+
+    // TODO: Swap medicine ID
     public class Medicine
     {
         [Key]
@@ -28,5 +30,7 @@ namespace CO659_TeamApp.Models
         [DisplayName("Medicine Availability"), Required]
         public bool? IsAvailable { get; set; }
 
+
+        public virtual ICollection<Prescription> Prescriptions { get; set; }
     }
 }

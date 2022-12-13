@@ -43,7 +43,7 @@ namespace CO659_TeamApp.Models
         //public virtual Patient Patient { get; set; }
         //public virtual Practitioner Practitioner { get; set; }
 
-        public virtual ICollection<Medicine> Medicines { get; set; }
+        public virtual Medicine Medicines { get; set; }
 
     }
 }
