@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using Microsoft.AspNetCore.Identity;
 
 namespace CO659_TeamApp.Models
 {
@@ -52,12 +53,12 @@ namespace CO659_TeamApp.Models
         public int ID { get; set; }
 
 
-        [DisplayName("First Name"), StringLength(20), Required]
-        public string PractitionerFName { get; set; }
+        //[DisplayName("First Name"), StringLength(20), Required]
+        //public string PractitionerFName { get; set; }
 
 
-        [DisplayName("Last Name"), StringLength(20), Required]
-        public string PractitionerLName { get; set; }
+        //[DisplayName("Last Name"), StringLength(20), Required]
+        //public string PractitionerLName { get; set; }
 
 
 
@@ -65,13 +66,13 @@ namespace CO659_TeamApp.Models
         public PractitionerDepts? PractitionerDept { get; set; }
 
 
-        public string FullName
-        {
-            get
-            {
-                return PractitionerLName + (" ") + PractitionerFName;
-            }
-        }
+        //public string FullName
+        //{
+        //    get
+        //    {
+        //        return PractitionerLName + (" ") + PractitionerFName;
+        //    }
+        //}
 
         // Navigation properties
         public virtual Account Account { get; set; }
