@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp.csproj": {}
+    "D:\\Documents\\BNU\\Year 3\\CO659 - Enterprise Systems Development\\Local Repository\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp.csproj": {}
   },
   "projects": {
-    "C:\\repos\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp.csproj": {
+    "D:\\Documents\\BNU\\Year 3\\CO659 - Enterprise Systems Development\\Local Repository\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp.csproj",
+        "projectUniqueName": "D:\\Documents\\BNU\\Year 3\\CO659 - Enterprise Systems Development\\Local Repository\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp.csproj",
         "projectName": "CO659-TeamApp",
-        "projectPath": "C:\\repos\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp.csproj",
-        "packagesPath": "C:\\Users\\isabe\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\obj\\",
+        "projectPath": "D:\\Documents\\BNU\\Year 3\\CO659 - Enterprise Systems Development\\Local Repository\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp.csproj",
+        "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\BNU\\Year 3\\CO659 - Enterprise Systems Development\\Local Repository\\CO659-TeamApp\\CO659-TeamApp\\CO659-TeamApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\isabe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
