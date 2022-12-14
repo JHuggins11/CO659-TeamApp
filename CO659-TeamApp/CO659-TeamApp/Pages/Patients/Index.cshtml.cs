@@ -19,7 +19,7 @@ namespace CO659_TeamApp.Pages.Patients
             _context = context;
         }
 
-        public IList<Patient> Patient { get;set; } = default!;
+        public IList<Person> Patient { get;set; } = default!;
 
         public async Task OnGetAsync()
         {

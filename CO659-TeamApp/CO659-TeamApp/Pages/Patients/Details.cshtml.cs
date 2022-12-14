@@ -19,7 +19,7 @@ namespace CO659_TeamApp.Pages.Patients
             _context = context;
         }
 
-      public Patient Patient { get; set; }
+      public Person Patient { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

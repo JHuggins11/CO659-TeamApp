@@ -88,14 +88,14 @@ namespace CO659_TeamApp.Data
 
 
 
-            var patient = new Patient[]
+            var patient = new Person[]
 {
-                new Patient
+                new Person
                 {
                     ID=1,
-                    PatientFName="Maria",
-                    PatientLName="Cox",
-                    PatientDOB=DateTime.Parse("1995-12-01"),
+                    FirstName="Maria",
+                    LastName="Cox",
+                    DOB=DateTime.Parse("1995-12-01"),
                     AddressHouseNo="2",
                     AddressStreet="Milton Close",
                     AddressLineTwo="Bakers Way",
@@ -103,12 +103,12 @@ namespace CO659_TeamApp.Data
                     AddressPostcode="WG3 7GH",
                 },
 
-                new Patient
+                new Person
                 {
                     ID=2,
-                    PatientFName="Prathna",
-                    PatientLName="Reed",
-                    PatientDOB=DateTime.Parse("1972-06-03"),
+                    FirstName="Prathna",
+                    LastName="Reed",
+                    DOB=DateTime.Parse("1972-06-03"),
                     AddressHouseNo="6",
                     AddressStreet="Hollybush Lane",
                     AddressLineTwo="Sleepside",
@@ -117,12 +117,12 @@ namespace CO659_TeamApp.Data
                     MobileNumber="07658832464"
                 },
 
-                new Patient
+                new Person
                 {
                     ID=3,
-                    PatientFName="Thomas",
-                    PatientLName="Penn",
-                    PatientDOB=DateTime.Parse("1999-01-09"),
+                    FirstName="Thomas",
+                    LastName="Penn",
+                    DOB=DateTime.Parse("1999-01-09"),
                     AddressHouseNo="24",
                     AddressStreet="Crabtree Lane",
                     AddressLineTwo="Walkers Close",

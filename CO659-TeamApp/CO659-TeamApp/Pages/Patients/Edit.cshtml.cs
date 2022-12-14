@@ -21,7 +21,7 @@ namespace CO659_TeamApp.Pages.Patients
         }
 
         [BindProperty]
-        public Patient Patient { get; set; } = default!;
+        public Person Patient { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

@@ -3,8 +3,6 @@ using System.ComponentModel;
 
 namespace CO659_TeamApp.Models
 {
-
-
     public enum PractitionerTitles
     {
         [Display(Name = "Consultant")]
@@ -46,37 +44,16 @@ namespace CO659_TeamApp.Models
         [Display(Name = "Other")]
         other
     }
-    public class Practitioner
+
+    public class Practitioner : Person
     {
-        [Key]
-        public int ID { get; set; }
-
-
-        [DisplayName("First Name"), StringLength(20), Required]
-        public string PractitionerFName { get; set; }
-
-
-        [DisplayName("Last Name"), StringLength(20), Required]
-        public string PractitionerLName { get; set; }
-
-
-
         public PractitionerTitles? PractitionerTitle { get; set; }
         public PractitionerDepts? PractitionerDept { get; set; }
-
-
-        public string FullName
-        {
-            get
-            {
-                return PractitionerLName + (" ") + PractitionerFName;
-            }
-        }
 
         // Navigation properties
         public virtual Account Account { get; set; }
 
-        public virtual ICollection<Patient> Patients { get; set; }
+        public virtual ICollection<Person> Patients { get; set; }
 
         public virtual ICollection<Prescription> Prescriptions { get; set; }
         public virtual ICollection<Appointment> Appointments { get; set; }

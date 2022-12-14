@@ -11,7 +11,7 @@ namespace CO659_TeamApp.Data
         {
         }
 
-        public DbSet<Patient> Patients { get; set; }
+        public DbSet<Person> Patients { get; set; }
         public DbSet<Symptom> Symptoms { get; set; }
         public DbSet<Prescription> Prescriptions { get; set; }
         public DbSet<Appointment> Appointments { get; set; }

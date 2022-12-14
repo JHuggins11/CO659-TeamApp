@@ -25,7 +25,7 @@ namespace CO659_TeamApp.Pages.Patients
         }
 
         [BindProperty]
-        public Patient Patient { get; set; }
+        public Person Patient { get; set; }
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD

@@ -3,22 +3,22 @@ using System.ComponentModel;
 
 namespace CO659_TeamApp.Models
 {
-    public class Patient
+    public class Person
     {
         [Key]
         public int ID { get; set; }
 
 
         [DisplayName("First Name"), StringLength(20), Required]
-        public string PatientFName { get; set; }
+        public string FirstName { get; set; }
 
 
         [DisplayName("Last Name"), StringLength(20), Required]
-        public string PatientLName { get; set; }
+        public string LastName { get; set; }
 
 
         [DisplayName("DOB"), DataType(DataType.Date), Required]
-        public DateTime PatientDOB { get; set; }
+        public DateTime DOB { get; set; }
 
 
         [DisplayName("House Number"), StringLength(5), Required]
@@ -44,11 +44,12 @@ namespace CO659_TeamApp.Models
         [DisplayName("Mobile"), Required, MinLength(11), StringLength(15)]
         public string MobileNumber { get; set; }
 
+        // TODO: Last Name, First Name or First Name, Last Name?
         public string FullName
         {
             get
             {
-                return PatientLName + (" ") + PatientFName;
+                return LastName + (" ") + FirstName;
             }
         }
 
