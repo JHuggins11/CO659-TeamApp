@@ -48,42 +48,11 @@ namespace CO659_TeamApp.Models
 
     public class Practitioner : Person
     {
-<<<<<<< HEAD
-        [Key]
-        public int ID { get; set; }
-
-
-        //[DisplayName("First Name"), StringLength(20), Required]
-        //public string PractitionerFName { get; set; }
-
-
-        //[DisplayName("Last Name"), StringLength(20), Required]
-        //public string PractitionerLName { get; set; }
-
-
-
         public PractitionerTitles? PractitionerTitle { get; set; }
         public PractitionerDepts? PractitionerDept { get; set; }
 
 
-        //public string FullName
-        //{
-        //    get
-        //    {
-        //        return PractitionerLName + (" ") + PractitionerFName;
-        //    }
-        //}
-
-=======
-        public PractitionerTitles? PractitionerTitle { get; set; }
-        public PractitionerDepts? PractitionerDept { get; set; }
-
->>>>>>> 536bf4d56ed39db46961e309df607069e00ff33b
         // Navigation properties
         public virtual ICollection<Person> Patients { get; set; }
-
-        /// TODO: Don't think we need these properties here anymore?
-        /* public virtual ICollection<Prescription> Prescriptions { get; set; }
-        public virtual ICollection<Appointment> Appointments { get; set; } */
     }
 }
