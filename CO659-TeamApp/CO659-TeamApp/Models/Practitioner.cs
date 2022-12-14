@@ -50,10 +50,11 @@ namespace CO659_TeamApp.Models
         public PractitionerTitles? PractitionerTitle { get; set; }
         public PractitionerDepts? PractitionerDept { get; set; }
 
-        /// TODO: Don't think we need these properties here anymore?
-        /* public virtual ICollection<Person> Patients { get; set; }
+        // Navigation properties
+        public virtual ICollection<Person> Patients { get; set; }
 
-        public virtual ICollection<Prescription> Prescriptions { get; set; }
+        /// TODO: Don't think we need these properties here anymore?
+        /* public virtual ICollection<Prescription> Prescriptions { get; set; }
         public virtual ICollection<Appointment> Appointments { get; set; } */
     }
 }
