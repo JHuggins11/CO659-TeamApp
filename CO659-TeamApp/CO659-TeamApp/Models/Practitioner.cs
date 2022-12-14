@@ -4,8 +4,6 @@ using Microsoft.AspNetCore.Identity;
 
 namespace CO659_TeamApp.Models
 {
-
-
     public enum PractitionerTitles
     {
         [Display(Name = "Consultant")]
@@ -47,8 +45,10 @@ namespace CO659_TeamApp.Models
         [Display(Name = "Other")]
         other
     }
-    public class Practitioner
+
+    public class Practitioner : Person
     {
+<<<<<<< HEAD
         [Key]
         public int ID { get; set; }
 
@@ -74,12 +74,16 @@ namespace CO659_TeamApp.Models
         //    }
         //}
 
+=======
+        public PractitionerTitles? PractitionerTitle { get; set; }
+        public PractitionerDepts? PractitionerDept { get; set; }
+
+>>>>>>> 536bf4d56ed39db46961e309df607069e00ff33b
         // Navigation properties
-        public virtual Account Account { get; set; }
+        public virtual ICollection<Person> Patients { get; set; }
 
-        public virtual ICollection<Patient> Patients { get; set; }
-
-        public virtual ICollection<Prescription> Prescriptions { get; set; }
-        public virtual ICollection<Appointment> Appointments { get; set; }
+        /// TODO: Don't think we need these properties here anymore?
+        /* public virtual ICollection<Prescription> Prescriptions { get; set; }
+        public virtual ICollection<Appointment> Appointments { get; set; } */
     }
 }
