@@ -51,8 +51,6 @@ namespace CO659_TeamApp.Models
         public PractitionerDepts? PractitionerDept { get; set; }
 
         // Navigation properties
-        public virtual Account Account { get; set; }
-
         public virtual ICollection<Person> Patients { get; set; }
 
         public virtual ICollection<Prescription> Prescriptions { get; set; }
