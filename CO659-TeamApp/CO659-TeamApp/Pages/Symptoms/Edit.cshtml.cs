@@ -21,21 +21,22 @@ namespace CO659_TeamApp.Pages.Symptoms
         }
 
         [BindProperty]
-        public Symptom Symptom { get; set; } = default!;
+        public Prescription Prescription { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Symptoms == null)
+            if (id == null || _context.Prescriptions == null)
             {
                 return NotFound();
             }
 
-            var symptom =  await _context.Symptoms.FirstOrDefaultAsync(m => m.ID == id);
-            if (symptom == null)
+            var prescription =  await _context.Prescriptions.FirstOrDefaultAsync(m => m.PrescriptionID == id);
+            if (prescription == null)
             {
                 return NotFound();
             }
-            Symptom = symptom;
+            Prescription = prescription;
+           ViewData["PersonID"] = new SelectList(_context.People, "PersonID", "AddressHouseNo");
             return Page();
         }
 
@@ -48,7 +49,7 @@ namespace CO659_TeamApp.Pages.Symptoms
                 return Page();
             }
 
-            _context.Attach(Symptom).State = EntityState.Modified;
+            _context.Attach(Prescription).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +57,7 @@ namespace CO659_TeamApp.Pages.Symptoms
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!SymptomExists(Symptom.ID))
+                if (!PrescriptionExists(Prescription.PrescriptionID))
                 {
                     return NotFound();
                 }
@@ -69,9 +70,9 @@ namespace CO659_TeamApp.Pages.Symptoms
             return RedirectToPage("./Index");
         }
 
-        private bool SymptomExists(int id)
+        private bool PrescriptionExists(int id)
         {
-          return _context.Symptoms.Any(e => e.ID == id);
+          return _context.Prescriptions.Any(e => e.PrescriptionID == id);
         }
     }
 }

@@ -46,13 +46,11 @@ namespace CO659_TeamApp.Models
         other
     }
 
+    // Practitioner inherits from Person
     public class Practitioner : Person
     {
         public PractitionerTitles? PractitionerTitle { get; set; }
         public PractitionerDepts? PractitionerDept { get; set; }
 
-
-        // Navigation properties
-        public virtual ICollection<Person> Patients { get; set; }
     }
 }

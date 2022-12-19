@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using CO659_TeamApp.Data;
 using CO659_TeamApp.Models;
 
-namespace CO659_TeamApp.Pages.Patients
+namespace CO659_TeamApp.Pages.Appointments
 {
     public class CreateModel : PageModel
     {
@@ -21,11 +21,12 @@ namespace CO659_TeamApp.Pages.Patients
 
         public IActionResult OnGet()
         {
+        ViewData["PersonID"] = new SelectList(_context.People, "PersonID", "AddressHouseNo");
             return Page();
         }
 
         [BindProperty]
-        public Person Patient { get; set; }
+        public Appointment Appointment { get; set; }
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
@@ -36,7 +37,7 @@ namespace CO659_TeamApp.Pages.Patients
                 return Page();
             }
 
-            _context.Patients.Add(Patient);
+            _context.Appointments.Add(Appointment);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

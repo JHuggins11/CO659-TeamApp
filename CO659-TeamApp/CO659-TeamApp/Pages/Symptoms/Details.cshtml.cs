@@ -19,23 +19,23 @@ namespace CO659_TeamApp.Pages.Symptoms
             _context = context;
         }
 
-      public Symptom Symptom { get; set; }
+      public Prescription Prescription { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Symptoms == null)
+            if (id == null || _context.Prescriptions == null)
             {
                 return NotFound();
             }
 
-            var symptom = await _context.Symptoms.FirstOrDefaultAsync(m => m.ID == id);
-            if (symptom == null)
+            var prescription = await _context.Prescriptions.FirstOrDefaultAsync(m => m.PrescriptionID == id);
+            if (prescription == null)
             {
                 return NotFound();
             }
             else 
             {
-                Symptom = symptom;
+                Prescription = prescription;
             }
             return Page();
         }

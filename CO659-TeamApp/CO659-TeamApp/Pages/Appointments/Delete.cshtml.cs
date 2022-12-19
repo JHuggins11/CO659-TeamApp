@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using CO659_TeamApp.Data;
 using CO659_TeamApp.Models;
 
-namespace CO659_TeamApp.Pages.Accounts
+namespace CO659_TeamApp.Pages.Appointments
 {
     public class DeleteModel : PageModel
     {
@@ -20,40 +20,40 @@ namespace CO659_TeamApp.Pages.Accounts
         }
 
         [BindProperty]
-      public Account Account { get; set; }
+      public Appointment Appointment { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Accounts == null)
+            if (id == null || _context.Appointments == null)
             {
                 return NotFound();
             }
 
-            var account = await _context.Accounts.FirstOrDefaultAsync(m => m.ID == id);
+            var appointment = await _context.Appointments.FirstOrDefaultAsync(m => m.AppointmentID == id);
 
-            if (account == null)
+            if (appointment == null)
             {
                 return NotFound();
             }
             else 
             {
-                Account = account;
+                Appointment = appointment;
             }
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null || _context.Accounts == null)
+            if (id == null || _context.Appointments == null)
             {
                 return NotFound();
             }
-            var account = await _context.Accounts.FindAsync(id);
+            var appointment = await _context.Appointments.FindAsync(id);
 
-            if (account != null)
+            if (appointment != null)
             {
-                Account = account;
-                _context.Accounts.Remove(Account);
+                Appointment = appointment;
+                _context.Appointments.Remove(Appointment);
                 await _context.SaveChangesAsync();
             }
 

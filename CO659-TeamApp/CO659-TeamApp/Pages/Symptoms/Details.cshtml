@@ -8,36 +8,36 @@
 <h1>Details</h1>
 
 <div>
-    <h4>Symptom</h4>
+    <h4>Prescription</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Symptom.SymptomName)
+            @Html.DisplayNameFor(model => model.Prescription.PrescriptionDate)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Symptom.SymptomName)
+            @Html.DisplayFor(model => model.Prescription.PrescriptionDate)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Symptom.SymptomType)
+            @Html.DisplayNameFor(model => model.Prescription.PrescriptionPrice)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Symptom.SymptomType)
+            @Html.DisplayFor(model => model.Prescription.PrescriptionPrice)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Symptom.SymptomDetails)
+            @Html.DisplayNameFor(model => model.Prescription.PrescriptionQty)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Symptom.SymptomDetails)
+            @Html.DisplayFor(model => model.Prescription.PrescriptionQty)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Symptom.SymptomSeverity)
+            @Html.DisplayNameFor(model => model.Prescription.People)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Symptom.SymptomSeverity)
+            @Html.DisplayFor(model => model.Prescription.People.AddressHouseNo)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.Symptom?.ID">Edit</a> |
+    <a asp-page="./Edit" asp-route-id="@Model.Prescription?.PrescriptionID">Edit</a> |
     <a asp-page="./Index">Back to List</a>
 </div>

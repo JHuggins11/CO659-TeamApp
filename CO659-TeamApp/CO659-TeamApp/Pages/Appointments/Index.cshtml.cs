@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using CO659_TeamApp.Data;
 using CO659_TeamApp.Models;
 
-namespace CO659_TeamApp.Pages.Patients
+namespace CO659_TeamApp.Pages.Appointments
 {
     public class IndexModel : PageModel
     {
@@ -19,13 +19,14 @@ namespace CO659_TeamApp.Pages.Patients
             _context = context;
         }
 
-        public IList<Person> Patient { get;set; } = default!;
+        public IList<Appointment> Appointment { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            if (_context.Patients != null)
+            if (_context.Appointments != null)
             {
-                Patient = await _context.Patients.ToListAsync();
+                Appointment = await _context.Appointments
+                .Include(a => a.People).ToListAsync();
             }
         }
     }

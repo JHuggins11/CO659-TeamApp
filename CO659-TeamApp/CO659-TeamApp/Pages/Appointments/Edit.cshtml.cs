@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using CO659_TeamApp.Data;
 using CO659_TeamApp.Models;
 
-namespace CO659_TeamApp.Pages.Patients
+namespace CO659_TeamApp.Pages.Appointments
 {
     public class EditModel : PageModel
     {
@@ -21,21 +21,22 @@ namespace CO659_TeamApp.Pages.Patients
         }
 
         [BindProperty]
-        public Person Patient { get; set; } = default!;
+        public Appointment Appointment { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Patients == null)
+            if (id == null || _context.Appointments == null)
             {
                 return NotFound();
             }
 
-            var patient =  await _context.Patients.FirstOrDefaultAsync(m => m.ID == id);
-            if (patient == null)
+            var appointment =  await _context.Appointments.FirstOrDefaultAsync(m => m.AppointmentID == id);
+            if (appointment == null)
             {
                 return NotFound();
             }
-            Patient = patient;
+            Appointment = appointment;
+           ViewData["PersonID"] = new SelectList(_context.People, "PersonID", "AddressHouseNo");
             return Page();
         }
 
@@ -48,7 +49,7 @@ namespace CO659_TeamApp.Pages.Patients
                 return Page();
             }
 
-            _context.Attach(Patient).State = EntityState.Modified;
+            _context.Attach(Appointment).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +57,7 @@ namespace CO659_TeamApp.Pages.Patients
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PatientExists(Patient.ID))
+                if (!AppointmentExists(Appointment.AppointmentID))
                 {
                     return NotFound();
                 }
@@ -69,9 +70,9 @@ namespace CO659_TeamApp.Pages.Patients
             return RedirectToPage("./Index");
         }
 
-        private bool PatientExists(int id)
+        private bool AppointmentExists(int id)
         {
-          return _context.Patients.Any(e => e.ID == id);
+          return _context.Appointments.Any(e => e.AppointmentID == id);
         }
     }
 }

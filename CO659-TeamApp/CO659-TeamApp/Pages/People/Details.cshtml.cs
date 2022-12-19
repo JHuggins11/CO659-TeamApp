@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using CO659_TeamApp.Data;
 using CO659_TeamApp.Models;
 
-namespace CO659_TeamApp.Pages.Accounts
+namespace CO659_TeamApp.Pages.People
 {
     public class DetailsModel : PageModel
     {
@@ -19,23 +19,23 @@ namespace CO659_TeamApp.Pages.Accounts
             _context = context;
         }
 
-      public Account Account { get; set; }
+      public Person Person { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Accounts == null)
+            if (id == null || _context.People == null)
             {
                 return NotFound();
             }
 
-            var account = await _context.Accounts.FirstOrDefaultAsync(m => m.ID == id);
-            if (account == null)
+            var person = await _context.People.FirstOrDefaultAsync(m => m.PersonID == id);
+            if (person == null)
             {
                 return NotFound();
             }
             else 
             {
-                Account = account;
+                Person = person;
             }
             return Page();
         }

@@ -28,7 +28,7 @@ namespace CO659_TeamApp.Pages.Medicines
                 return NotFound();
             }
 
-            var medicine = await _context.Medicines.FirstOrDefaultAsync(m => m.ID == id);
+            var medicine = await _context.Medicines.FirstOrDefaultAsync(m => m.MedicineID == id);
             if (medicine == null)
             {
                 return NotFound();

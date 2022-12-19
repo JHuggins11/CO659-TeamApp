@@ -544,3 +544,4 @@ D:\Documents\BNU\Year 3\CO659 - Enterprise Systems Development\Local Repository\
 D:\Documents\BNU\Year 3\CO659 - Enterprise Systems Development\Local Repository\JHuggins11\CO659-TeamApp\CO659-TeamApp\CO659-TeamApp\obj\Debug\net6.0\CO659-TeamApp.pdb
 D:\Documents\BNU\Year 3\CO659 - Enterprise Systems Development\Local Repository\JHuggins11\CO659-TeamApp\CO659-TeamApp\CO659-TeamApp\obj\Debug\net6.0\CO659-TeamApp.genruntimeconfig.cache
 D:\Documents\BNU\Year 3\CO659 - Enterprise Systems Development\Local Repository\JHuggins11\CO659-TeamApp\CO659-TeamApp\CO659-TeamApp\obj\Debug\net6.0\ref\CO659-TeamApp.dll
+C:\repos\CO659-TeamApp\CO659-TeamApp\CO659-TeamApp\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll

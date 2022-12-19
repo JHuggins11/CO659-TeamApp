@@ -30,12 +30,13 @@ namespace CO659_TeamApp.Pages.Medicines
                 return NotFound();
             }
 
-            var medicine =  await _context.Medicines.FirstOrDefaultAsync(m => m.ID == id);
+            var medicine =  await _context.Medicines.FirstOrDefaultAsync(m => m.MedicineID == id);
             if (medicine == null)
             {
                 return NotFound();
             }
             Medicine = medicine;
+           ViewData["PrescriptionID"] = new SelectList(_context.Prescriptions, "PrescriptionID", "PrescriptionID");
             return Page();
         }
 
@@ -56,7 +57,7 @@ namespace CO659_TeamApp.Pages.Medicines
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!MedicineExists(Medicine.ID))
+                if (!MedicineExists(Medicine.MedicineID))
                 {
                     return NotFound();
                 }
@@ -71,7 +72,7 @@ namespace CO659_TeamApp.Pages.Medicines
 
         private bool MedicineExists(int id)
         {
-          return _context.Medicines.Any(e => e.ID == id);
+          return _context.Medicines.Any(e => e.MedicineID == id);
         }
     }
 }

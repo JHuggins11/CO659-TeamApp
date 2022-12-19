@@ -21,6 +21,7 @@ namespace CO659_TeamApp.Pages.Prescriptions
 
         public IActionResult OnGet()
         {
+        ViewData["PersonID"] = new SelectList(_context.People, "PersonID", "AddressHouseNo");
             return Page();
         }
 

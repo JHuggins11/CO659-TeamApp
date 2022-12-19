@@ -20,7 +20,11 @@ namespace CO659_TeamApp.Models
     public class Symptom
     {
         [Key]
-        public int ID { get; set; }
+        public int SymtomID { get; set; }
+
+        //Foreign Key
+        public int AppointmentID { get; set; }
+
 
 
         [DisplayName("Symptom Name"), StringLength(20), Required]
@@ -34,7 +38,11 @@ namespace CO659_TeamApp.Models
         [DisplayName("Symptom Details"), StringLength(200), Required]
         public string SymptomDetails { get; set; }
 
-
         public SymptomSeverities? SymptomSeverity { get; set; }
+
+
+ 
+
+        public virtual Appointment Appointments { get; set; }
     }
 }

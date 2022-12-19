@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using CO659_TeamApp.Data;
 using CO659_TeamApp.Models;
 
-namespace CO659_TeamApp.Pages.Accounts
+namespace CO659_TeamApp.Pages.People
 {
     public class IndexModel : PageModel
     {
@@ -19,13 +19,13 @@ namespace CO659_TeamApp.Pages.Accounts
             _context = context;
         }
 
-        public IList<Account> Account { get;set; } = default!;
+        public IList<Person> Person { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            if (_context.Accounts != null)
+            if (_context.People != null)
             {
-                Account = await _context.Accounts.ToListAsync();
+                Person = await _context.People.ToListAsync();
             }
         }
     }

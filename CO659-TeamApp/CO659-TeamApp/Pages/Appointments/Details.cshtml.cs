@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using CO659_TeamApp.Data;
 using CO659_TeamApp.Models;
 
-namespace CO659_TeamApp.Pages.Patients
+namespace CO659_TeamApp.Pages.Appointments
 {
     public class DetailsModel : PageModel
     {
@@ -19,23 +19,23 @@ namespace CO659_TeamApp.Pages.Patients
             _context = context;
         }
 
-      public Person Patient { get; set; }
+      public Appointment Appointment { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Patients == null)
+            if (id == null || _context.Appointments == null)
             {
                 return NotFound();
             }
 
-            var patient = await _context.Patients.FirstOrDefaultAsync(m => m.ID == id);
-            if (patient == null)
+            var appointment = await _context.Appointments.FirstOrDefaultAsync(m => m.AppointmentID == id);
+            if (appointment == null)
             {
                 return NotFound();
             }
             else 
             {
-                Patient = patient;
+                Appointment = appointment;
             }
             return Page();
         }

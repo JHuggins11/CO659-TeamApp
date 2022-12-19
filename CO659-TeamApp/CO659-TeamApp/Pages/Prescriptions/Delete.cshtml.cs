@@ -29,7 +29,7 @@ namespace CO659_TeamApp.Pages.Prescriptions
                 return NotFound();
             }
 
-            var prescription = await _context.Prescriptions.FirstOrDefaultAsync(m => m.ID == id);
+            var prescription = await _context.Prescriptions.FirstOrDefaultAsync(m => m.PrescriptionID == id);
 
             if (prescription == null)
             {

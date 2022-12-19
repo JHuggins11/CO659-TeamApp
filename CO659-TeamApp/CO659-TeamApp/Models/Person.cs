@@ -6,7 +6,7 @@ namespace CO659_TeamApp.Models
     public class Person
     {
         [Key]
-        public int ID { get; set; }
+        public int PersonID { get; set; }
 
 
         [DisplayName("First Name"), StringLength(20), Required]
@@ -44,7 +44,8 @@ namespace CO659_TeamApp.Models
         [DisplayName("Mobile"), Required, MinLength(11), StringLength(15)]
         public string MobileNumber { get; set; }
 
-        // TODO: Last Name, First Name or First Name, Last Name?
+
+        // Returns a persons full name
         public string FullName
         {
             get
@@ -52,12 +53,5 @@ namespace CO659_TeamApp.Models
                 return LastName + (" ") + FirstName;
             }
         }
-
-        // Navigation properties
-        public virtual Account Account { get; set; }
-
-        public virtual ICollection<Prescription> Prescriptions { get; set; }
-        public virtual ICollection<Appointment> Appointments { get; set; }
-
     }
 }

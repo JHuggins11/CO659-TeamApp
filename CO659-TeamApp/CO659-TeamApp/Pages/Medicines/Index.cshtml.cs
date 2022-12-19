@@ -25,7 +25,8 @@ namespace CO659_TeamApp.Pages.Medicines
         {
             if (_context.Medicines != null)
             {
-                Medicine = await _context.Medicines.ToListAsync();
+                Medicine = await _context.Medicines
+                .Include(m => m.Prescriptions).ToListAsync();
             }
         }
     }

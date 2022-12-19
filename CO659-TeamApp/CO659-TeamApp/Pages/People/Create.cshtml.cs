@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using CO659_TeamApp.Data;
 using CO659_TeamApp.Models;
 
-namespace CO659_TeamApp.Pages.Accounts
+namespace CO659_TeamApp.Pages.People
 {
     public class CreateModel : PageModel
     {
@@ -25,7 +25,7 @@ namespace CO659_TeamApp.Pages.Accounts
         }
 
         [BindProperty]
-        public Account Account { get; set; }
+        public Person Person { get; set; }
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
@@ -36,7 +36,7 @@ namespace CO659_TeamApp.Pages.Accounts
                 return Page();
             }
 
-            _context.Accounts.Add(Account);
+            _context.People.Add(Person);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

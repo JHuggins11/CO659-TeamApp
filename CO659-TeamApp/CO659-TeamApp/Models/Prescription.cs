@@ -8,15 +8,14 @@ namespace CO659_TeamApp.Models
     public class Prescription
     {
         [Key]
-        public int ID { get; set; }
+        public int PrescriptionID { get; set; }
+
+        public int PersonID { get; set; }   
+        
 
 
         [DisplayName("Prescription Order Date"), DataType(DataType.Date), Required]
         public DateTime PrescriptionDate { get; set; }
-
-
-        //[DisplayName("Prescription Order Time"), DataType(DataType.Date), Required]
-        //public DateTime PrescriptionTime { get; set; }
 
 
         [DisplayName("Prescription Price"), Required, DataType(DataType.Currency)]
@@ -28,7 +27,6 @@ namespace CO659_TeamApp.Models
         public int PrescriptionQty { get; set; }
 
 
-
         public int TotalPrescriptionPrice
         {
             get
@@ -37,13 +35,9 @@ namespace CO659_TeamApp.Models
             }
         }
 
-
-        // Navigation properties
-
-        //public virtual Patient Patient { get; set; }
-        //public virtual Practitioner Practitioner { get; set; }
-
-        public virtual Medicine Medicines { get; set; }
+        // A perscription can have multiple medicines 
+        public virtual ICollection<Medicine> Medicines { get; set; }
+        public virtual Person People { get; set; }
 
     }
 }

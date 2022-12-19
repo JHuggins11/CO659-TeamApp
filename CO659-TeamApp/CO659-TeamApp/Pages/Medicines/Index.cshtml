@@ -28,6 +28,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Medicine[0].IsAvailable)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicine[0].Prescriptions)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -50,9 +53,12 @@
                 @Html.DisplayFor(modelItem => item.IsAvailable)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                @Html.DisplayFor(modelItem => item.Prescriptions.PrescriptionID)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.MedicineID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.MedicineID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.MedicineID">Delete</a>
             </td>
         </tr>
 }

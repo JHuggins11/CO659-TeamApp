@@ -21,11 +21,12 @@ namespace CO659_TeamApp.Pages.Symptoms
 
         public IActionResult OnGet()
         {
+        ViewData["PersonID"] = new SelectList(_context.People, "PersonID", "AddressHouseNo");
             return Page();
         }
 
         [BindProperty]
-        public Symptom Symptom { get; set; }
+        public Prescription Prescription { get; set; }
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
@@ -36,7 +37,7 @@ namespace CO659_TeamApp.Pages.Symptoms
                 return Page();
             }
 
-            _context.Symptoms.Add(Symptom);
+            _context.Prescriptions.Add(Prescription);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

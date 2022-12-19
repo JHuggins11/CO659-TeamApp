@@ -42,10 +42,16 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Medicine.IsAvailable)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Medicine.Prescriptions)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Medicine.Prescriptions.PrescriptionID)
+        </dd>
     </dl>
     
     <form method="post">
-        <input type="hidden" asp-for="Medicine.ID" />
+        <input type="hidden" asp-for="Medicine.MedicineID" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-page="./Index">Back to List</a>
     </form>

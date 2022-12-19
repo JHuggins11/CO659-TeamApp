@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using CO659_TeamApp.Data;
 using CO659_TeamApp.Models;
 
-namespace CO659_TeamApp.Pages.Accounts
+namespace CO659_TeamApp.Pages.People
 {
     public class EditModel : PageModel
     {
@@ -21,21 +21,21 @@ namespace CO659_TeamApp.Pages.Accounts
         }
 
         [BindProperty]
-        public Account Account { get; set; } = default!;
+        public Person Person { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Accounts == null)
+            if (id == null || _context.People == null)
             {
                 return NotFound();
             }
 
-            var account =  await _context.Accounts.FirstOrDefaultAsync(m => m.ID == id);
-            if (account == null)
+            var person =  await _context.People.FirstOrDefaultAsync(m => m.PersonID == id);
+            if (person == null)
             {
                 return NotFound();
             }
-            Account = account;
+            Person = person;
             return Page();
         }
 
@@ -48,7 +48,7 @@ namespace CO659_TeamApp.Pages.Accounts
                 return Page();
             }
 
-            _context.Attach(Account).State = EntityState.Modified;
+            _context.Attach(Person).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +56,7 @@ namespace CO659_TeamApp.Pages.Accounts
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!AccountExists(Account.ID))
+                if (!PersonExists(Person.PersonID))
                 {
                     return NotFound();
                 }
@@ -69,9 +69,9 @@ namespace CO659_TeamApp.Pages.Accounts
             return RedirectToPage("./Index");
         }
 
-        private bool AccountExists(int id)
+        private bool PersonExists(int id)
         {
-          return _context.Accounts.Any(e => e.ID == id);
+          return _context.People.Any(e => e.PersonID == id);
         }
     }
 }

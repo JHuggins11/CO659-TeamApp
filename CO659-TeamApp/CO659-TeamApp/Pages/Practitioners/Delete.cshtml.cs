@@ -29,7 +29,7 @@ namespace CO659_TeamApp.Pages.Practitioners
                 return NotFound();
             }
 
-            var practitioner = await _context.Practitioners.FirstOrDefaultAsync(m => m.ID == id);
+            var practitioner = await _context.Practitioners.FirstOrDefaultAsync(m => m.PersonID == id);
 
             if (practitioner == null)
             {

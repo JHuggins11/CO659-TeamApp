@@ -30,12 +30,13 @@ namespace CO659_TeamApp.Pages.Prescriptions
                 return NotFound();
             }
 
-            var prescription =  await _context.Prescriptions.FirstOrDefaultAsync(m => m.ID == id);
+            var prescription =  await _context.Prescriptions.FirstOrDefaultAsync(m => m.PrescriptionID == id);
             if (prescription == null)
             {
                 return NotFound();
             }
             Prescription = prescription;
+           ViewData["PersonID"] = new SelectList(_context.People, "PersonID", "AddressHouseNo");
             return Page();
         }
 
@@ -56,7 +57,7 @@ namespace CO659_TeamApp.Pages.Prescriptions
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PrescriptionExists(Prescription.ID))
+                if (!PrescriptionExists(Prescription.PrescriptionID))
                 {
                     return NotFound();
                 }
@@ -71,7 +72,7 @@ namespace CO659_TeamApp.Pages.Prescriptions
 
         private bool PrescriptionExists(int id)
         {
-          return _context.Prescriptions.Any(e => e.ID == id);
+          return _context.Prescriptions.Any(e => e.PrescriptionID == id);
         }
     }
 }

@@ -30,7 +30,7 @@ namespace CO659_TeamApp.Pages.Practitioners
                 return NotFound();
             }
 
-            var practitioner =  await _context.Practitioners.FirstOrDefaultAsync(m => m.ID == id);
+            var practitioner =  await _context.Practitioners.FirstOrDefaultAsync(m => m.PersonID == id);
             if (practitioner == null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace CO659_TeamApp.Pages.Practitioners
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PractitionerExists(Practitioner.ID))
+                if (!PractitionerExists(Practitioner.PersonID))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace CO659_TeamApp.Pages.Practitioners
 
         private bool PractitionerExists(int id)
         {
-          return _context.Practitioners.Any(e => e.ID == id);
+          return _context.Practitioners.Any(e => e.PersonID == id);
         }
     }
 }

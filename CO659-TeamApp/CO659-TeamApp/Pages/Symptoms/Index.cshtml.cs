@@ -19,13 +19,14 @@ namespace CO659_TeamApp.Pages.Symptoms
             _context = context;
         }
 
-        public IList<Symptom> Symptom { get;set; } = default!;
+        public IList<Prescription> Prescription { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            if (_context.Symptoms != null)
+            if (_context.Prescriptions != null)
             {
-                Symptom = await _context.Symptoms.ToListAsync();
+                Prescription = await _context.Prescriptions
+                .Include(p => p.People).ToListAsync();
             }
         }
     }

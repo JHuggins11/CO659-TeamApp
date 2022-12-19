@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using CO659_TeamApp.Data;
 using CO659_TeamApp.Models;
 
-namespace CO659_TeamApp.Pages.Patients
+namespace CO659_TeamApp.Pages.People
 {
     public class DeleteModel : PageModel
     {
@@ -20,40 +20,40 @@ namespace CO659_TeamApp.Pages.Patients
         }
 
         [BindProperty]
-      public Person Patient { get; set; }
+      public Person Person { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Patients == null)
+            if (id == null || _context.People == null)
             {
                 return NotFound();
             }
 
-            var patient = await _context.Patients.FirstOrDefaultAsync(m => m.ID == id);
+            var person = await _context.People.FirstOrDefaultAsync(m => m.PersonID == id);
 
-            if (patient == null)
+            if (person == null)
             {
                 return NotFound();
             }
             else 
             {
-                Patient = patient;
+                Person = person;
             }
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null || _context.Patients == null)
+            if (id == null || _context.People == null)
             {
                 return NotFound();
             }
-            var patient = await _context.Patients.FindAsync(id);
+            var person = await _context.People.FindAsync(id);
 
-            if (patient != null)
+            if (person != null)
             {
-                Patient = patient;
-                _context.Patients.Remove(Patient);
+                Person = person;
+                _context.People.Remove(Person);
                 await _context.SaveChangesAsync();
             }
 

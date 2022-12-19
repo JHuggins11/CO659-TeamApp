@@ -26,47 +26,36 @@ namespace CO659_TeamApp.Models
     public class Appointment
     {
         [Key]
-        public int ID { get; set; }
+        public int AppointmentID { get; set; }
+
+        // Foreign keys
+        public int PersonID { get; set; }
+
 
 
         [DisplayName("Booking Date"), DataType(DataType.Date), Required]
         public DateTime BookingDate { get; set; }
 
 
-        //[DisplayName("Booking Time"), DataType(DataType.Time), Required]
-        //public TimeOnly BookingTime { get; set; }
-
-
         [DisplayName("Appointment Date"), DataType(DataType.Date), Required]
         public DateTime ApptDate { get; set; }
-
-
-        //[DisplayName("Appointment Time"), DataType(DataType.Time), Required]
-        //public TimeOnly ApptTime { get; set; }
 
 
         [DisplayName("Appointment Duration"), Required]
         public ApptLengths? ApptLength { get; set; }
 
 
-        //public string FullBooking
-        //{
-        //    get
-        //    {
-        //        return BookingTime + (" ") + BookingDate;
-        //    }
-        //}
 
-        //public string FullAppt
-        //{
-        //    get
-        //    {
-        //        return ApptTime + (" ") + ApptDate;
-        //    }
-        //}
+        // A person can add one sypmtom when booking an appointment
+        public virtual Symptom Symptoms { get; set; }
+        public virtual Practitioner Practitioners { get; set; }
+        public virtual Person People { get; set; }
 
-        //// ToDo: is this needed?
-        //public virtual Patient Patient { get; set; }
-        //public virtual Practitioner Practitioner { get; set; }
+        // TODO
+        // surely an appointment would only have one person? I.e., removing ICollection
+        // of Appointments in Person Model and using... 
+        // public virtual Person Person { get; set; } here
+        // same for Prescriptions
+
     }
 }

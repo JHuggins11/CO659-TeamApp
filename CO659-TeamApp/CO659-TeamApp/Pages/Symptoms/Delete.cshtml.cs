@@ -20,40 +20,40 @@ namespace CO659_TeamApp.Pages.Symptoms
         }
 
         [BindProperty]
-      public Symptom Symptom { get; set; }
+      public Prescription Prescription { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Symptoms == null)
+            if (id == null || _context.Prescriptions == null)
             {
                 return NotFound();
             }
 
-            var symptom = await _context.Symptoms.FirstOrDefaultAsync(m => m.ID == id);
+            var prescription = await _context.Prescriptions.FirstOrDefaultAsync(m => m.PrescriptionID == id);
 
-            if (symptom == null)
+            if (prescription == null)
             {
                 return NotFound();
             }
             else 
             {
-                Symptom = symptom;
+                Prescription = prescription;
             }
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null || _context.Symptoms == null)
+            if (id == null || _context.Prescriptions == null)
             {
                 return NotFound();
             }
-            var symptom = await _context.Symptoms.FindAsync(id);
+            var prescription = await _context.Prescriptions.FindAsync(id);
 
-            if (symptom != null)
+            if (prescription != null)
             {
-                Symptom = symptom;
-                _context.Symptoms.Remove(Symptom);
+                Prescription = prescription;
+                _context.Prescriptions.Remove(Prescription);
                 await _context.SaveChangesAsync();
             }
 

@@ -19,24 +19,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcQ3JlYXRlLmNzaHRtbA==
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Appointments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcRGVsZXRlLmNzaHRtbA==
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Appointments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcRGV0YWlscy5jc2h0bWw=
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Appointments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcRWRpdC5jc2h0bWw=
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Appointments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcSW5kZXguY3NodG1s
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Appointments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Error.cshtml]
@@ -67,24 +67,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudHNcQ3JlYXRlLmNzaHRtbA==
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/People/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVvcGxlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudHNcRGVsZXRlLmNzaHRtbA==
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/People/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVvcGxlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudHNcRGV0YWlscy5jc2h0bWw=
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/People/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVvcGxlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudHNcRWRpdC5jc2h0bWw=
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/People/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVvcGxlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudHNcSW5kZXguY3NodG1s
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/People/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVvcGxlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Create.cshtml]

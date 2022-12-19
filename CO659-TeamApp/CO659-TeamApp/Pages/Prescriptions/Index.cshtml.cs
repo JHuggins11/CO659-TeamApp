@@ -25,7 +25,8 @@ namespace CO659_TeamApp.Pages.Prescriptions
         {
             if (_context.Prescriptions != null)
             {
-                Prescription = await _context.Prescriptions.ToListAsync();
+                Prescription = await _context.Prescriptions
+                .Include(p => p.People).ToListAsync();
             }
         }
     }
