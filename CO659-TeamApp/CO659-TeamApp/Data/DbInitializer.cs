@@ -144,8 +144,8 @@ namespace CO659_TeamApp.Data
                 new Practitioner
                 {
                     ID=1,
-                    PractitionerFName="Naya",
-                    PractitionerLName="Choudhurt",
+                    //PractitionerFName="Naya",
+                    //PractitionerLName="Choudhurt",
                     PractitionerTitle=PractitionerTitles.generalPractitioner,
                     PractitionerDept=PractitionerDepts.general
                 },
@@ -153,8 +153,8 @@ namespace CO659_TeamApp.Data
                 new Practitioner
                 {
                     ID=2,
-                    PractitionerFName="Nigel",
-                    PractitionerLName="Flemming",
+                    //PractitionerFName="Nigel",
+                    //PractitionerLName="Flemming",
                     PractitionerTitle=PractitionerTitles.paediatrician,
                     PractitionerDept=PractitionerDepts.paediatrics
                 },
@@ -162,8 +162,8 @@ namespace CO659_TeamApp.Data
                 new Practitioner
                 {
                     ID=3,
-                    PractitionerFName="Lisa",
-                    PractitionerLName="Stone",
+                    //PractitionerFName="Lisa",
+                    //PractitionerLName="Stone",
                     PractitionerTitle=PractitionerTitles.nutritionist,
                     PractitionerDept=PractitionerDepts.hollisticAndPreventative
                 },
@@ -171,10 +171,6 @@ namespace CO659_TeamApp.Data
 
             context.Practitioners.AddRange(practitioner);
             context.SaveChanges();
-
-
-
-
 
 
             var prescription = new Prescription[]
@@ -241,24 +237,5 @@ namespace CO659_TeamApp.Data
 
             context.Appointments.AddRange(appointment);
             context.SaveChanges();
-
-
-
-
-            var account = new Account[]
-{
-                new Account
-                {
-                    ID=1,
-                    AccountEmail="",
-                    AccountPassword="",
-                    AccountLevel=0,
-                },
-
-            };
-
-            context.Accounts.AddRange(account);
-            context.SaveChanges();
-        }
     }
 }
