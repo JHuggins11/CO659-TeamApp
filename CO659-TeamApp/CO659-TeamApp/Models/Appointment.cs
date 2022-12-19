@@ -33,40 +33,12 @@ namespace CO659_TeamApp.Models
         public DateTime BookingDate { get; set; }
 
 
-        //[DisplayName("Booking Time"), DataType(DataType.Time), Required]
-        //public TimeOnly BookingTime { get; set; }
-
-
         [DisplayName("Appointment Date"), DataType(DataType.Date), Required]
         public DateTime ApptDate { get; set; }
-
-
-        //[DisplayName("Appointment Time"), DataType(DataType.Time), Required]
-        //public TimeOnly ApptTime { get; set; }
 
 
         [DisplayName("Appointment Duration"), Required]
         public ApptLengths? ApptLength { get; set; }
 
-
-        //public string FullBooking
-        //{
-        //    get
-        //    {
-        //        return BookingTime + (" ") + BookingDate;
-        //    }
-        //}
-
-        //public string FullAppt
-        //{
-        //    get
-        //    {
-        //        return ApptTime + (" ") + ApptDate;
-        //    }
-        //}
-
-        //// ToDo: is this needed?
-        //public virtual Patient Patient { get; set; }
-        //public virtual Practitioner Practitioner { get; set; }
     }
 }

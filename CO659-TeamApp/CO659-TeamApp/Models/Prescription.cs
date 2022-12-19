@@ -15,10 +15,6 @@ namespace CO659_TeamApp.Models
         public DateTime PrescriptionDate { get; set; }
 
 
-        //[DisplayName("Prescription Order Time"), DataType(DataType.Date), Required]
-        //public DateTime PrescriptionTime { get; set; }
-
-
         [DisplayName("Prescription Price"), Required, DataType(DataType.Currency)]
         [Column(TypeName = "money")]
         public decimal PrescriptionPrice { get; set; }
@@ -28,7 +24,6 @@ namespace CO659_TeamApp.Models
         public int PrescriptionQty { get; set; }
 
 
-
         public int TotalPrescriptionPrice
         {
             get
@@ -36,12 +31,6 @@ namespace CO659_TeamApp.Models
                 return (int)(PrescriptionQty * PrescriptionPrice);
             }
         }
-
-
-        // Navigation properties
-
-        //public virtual Patient Patient { get; set; }
-        //public virtual Practitioner Practitioner { get; set; }
 
         public virtual Medicine Medicines { get; set; }
 
