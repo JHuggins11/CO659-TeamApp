@@ -26,7 +26,11 @@ namespace CO659_TeamApp.Models
     public class Appointment
     {
         [Key]
-        public int ID { get; set; }
+        public int AppointmentID { get; set; }
+
+        // Foreign keys
+        public int PersonID { get; set; }
+
 
 
         [DisplayName("Booking Date"), DataType(DataType.Date), Required]
@@ -39,6 +43,19 @@ namespace CO659_TeamApp.Models
 
         [DisplayName("Appointment Duration"), Required]
         public ApptLengths? ApptLength { get; set; }
+
+
+
+        // A person can add one sypmtom when booking an appointment
+        public virtual Symptom Symptoms { get; set; }
+        public virtual Practitioner Practitioners { get; set; }
+        public virtual Person People { get; set; }
+
+        // TODO
+        // surely an appointment would only have one person? I.e., removing ICollection
+        // of Appointments in Person Model and using... 
+        // public virtual Person Person { get; set; } here
+        // same for Prescriptions
 
     }
 }

@@ -8,8 +8,11 @@ namespace CO659_TeamApp.Models
     public class Medicine
     {
         [Key]
-        public int ID { get; set; }
+        public int MedicineID { get; set; }
 
+
+        // Foreign keys
+        public int PrescriptionID { get; set; }
 
         [DisplayName("Medicine Name"), StringLength(30), Required]
         public string MedicineName { get; set; }
@@ -30,7 +33,6 @@ namespace CO659_TeamApp.Models
         [DisplayName("Medicine Availability"), Required]
         public bool? IsAvailable { get; set; }
 
-
-        public virtual ICollection<Prescription> Prescriptions { get; set; }
+        public virtual Prescription Prescriptions { get; set; }
     }
 }

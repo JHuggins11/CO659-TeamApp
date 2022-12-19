@@ -8,7 +8,10 @@ namespace CO659_TeamApp.Models
     public class Prescription
     {
         [Key]
-        public int ID { get; set; }
+        public int PrescriptionID { get; set; }
+
+        public int PersonID { get; set; }   
+        
 
 
         [DisplayName("Prescription Order Date"), DataType(DataType.Date), Required]
@@ -32,7 +35,9 @@ namespace CO659_TeamApp.Models
             }
         }
 
-        public virtual Medicine Medicines { get; set; }
+        // A perscription can have multiple medicines 
+        public virtual ICollection<Medicine> Medicines { get; set; }
+        public virtual Person People { get; set; }
 
     }
 }
