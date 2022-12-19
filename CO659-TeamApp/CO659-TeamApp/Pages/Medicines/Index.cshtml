@@ -1,0 +1,66 @@
+﻿@page
+@model CO659_TeamApp.Pages.Medicines.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicine[0].MedicineName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicine[0].MedicineType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicine[0].MedicineDosage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicine[0].MedicineQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicine[0].IsAvailable)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicine[0].Prescriptions)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Medicine) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedicineName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedicineType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedicineDosage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedicineQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAvailable)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prescriptions.PrescriptionID)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.MedicineID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.MedicineID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.MedicineID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

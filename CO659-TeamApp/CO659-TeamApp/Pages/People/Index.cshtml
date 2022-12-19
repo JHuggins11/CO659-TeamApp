@@ -1,0 +1,84 @@
+﻿@page
+@model CO659_TeamApp.Pages.People.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Person[0].FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Person[0].LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Person[0].DOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Person[0].AddressHouseNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Person[0].AddressStreet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Person[0].AddressLineTwo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Person[0].AddressTownCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Person[0].AddressPostcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Person[0].MobileNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Person) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddressHouseNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddressStreet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddressLineTwo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddressTownCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddressPostcode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MobileNumber)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PersonID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PersonID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PersonID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

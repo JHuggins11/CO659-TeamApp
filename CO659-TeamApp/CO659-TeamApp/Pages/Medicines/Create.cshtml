@@ -1,0 +1,58 @@
+﻿@page
+@model CO659_TeamApp.Pages.Medicines.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Medicine</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Medicine.PrescriptionID" class="control-label"></label>
+                <select asp-for="Medicine.PrescriptionID" class ="form-control" asp-items="ViewBag.PrescriptionID"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Medicine.MedicineName" class="control-label"></label>
+                <input asp-for="Medicine.MedicineName" class="form-control" />
+                <span asp-validation-for="Medicine.MedicineName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Medicine.MedicineType" class="control-label"></label>
+                <input asp-for="Medicine.MedicineType" class="form-control" />
+                <span asp-validation-for="Medicine.MedicineType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Medicine.MedicineDosage" class="control-label"></label>
+                <input asp-for="Medicine.MedicineDosage" class="form-control" />
+                <span asp-validation-for="Medicine.MedicineDosage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Medicine.MedicineQty" class="control-label"></label>
+                <input asp-for="Medicine.MedicineQty" class="form-control" />
+                <span asp-validation-for="Medicine.MedicineQty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Medicine.IsAvailable" class="control-label"></label>
+                <input asp-for="Medicine.IsAvailable" class="form-control" />
+                <span asp-validation-for="Medicine.IsAvailable" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

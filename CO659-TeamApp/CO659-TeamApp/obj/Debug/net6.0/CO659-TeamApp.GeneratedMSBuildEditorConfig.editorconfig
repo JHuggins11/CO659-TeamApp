@@ -19,12 +19,112 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Appointments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Appointments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Appointments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Appointments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Appointments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/People/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVvcGxlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/People/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVvcGxlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/People/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVvcGxlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/People/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVvcGxlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/People/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVvcGxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJhY3RpdGlvbmVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJhY3RpdGlvbmVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJhY3RpdGlvbmVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJhY3RpdGlvbmVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJhY3RpdGlvbmVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Privacy.cshtml]
@@ -37,6 +137,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ltcHRvbXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ltcHRvbXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ltcHRvbXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ltcHRvbXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ltcHRvbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/_ViewImports.cshtml]

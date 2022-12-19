@@ -8,14 +8,16 @@ namespace CO659_TeamApp.Data
     public class DbInitializer
     {
         public static void Initialize(ApplicationDbContext context)
-        { 
+        {
+            AddPerson(context);
+            AddPractitioner(context);
+
+            AddPrescription(context);
+            AddAppointment(context);
 
             AddSymptom(context);
             AddMedicine(context);
-            AddPerson(context);
-            AddPractitioner(context);
-            AddPrescription(context);
-            AddAppointment(context);
+
 
         }
 
@@ -331,7 +333,6 @@ namespace CO659_TeamApp.Data
                 new Appointment
                 {
                     PersonID=1,
-                    //SymptomID=1,
                     BookingDate=DateTime.Parse("2022-09-08 14:43"),
                     ApptDate=DateTime.Parse("2022-12-11 12:15"),
                     ApptLength=ApptLengths.fifeteen
@@ -340,7 +341,6 @@ namespace CO659_TeamApp.Data
                 new Appointment
                 {
                     PersonID=2,
-                    //SymptomID=2,
                     BookingDate=DateTime.Parse("2022-02-03 18:32"),
                     ApptDate=DateTime.Parse("2022-05-10 9:15"),
                     ApptLength=ApptLengths.sixty
@@ -349,7 +349,6 @@ namespace CO659_TeamApp.Data
                 new Appointment
                 {
                     PersonID=3,
-                    //SymptomID=3,
                     BookingDate=DateTime.Parse("2022-05-07 13:34"),
                     ApptDate=DateTime.Parse("2022-06-08 10:30"),
                     ApptLength=ApptLengths.twenty

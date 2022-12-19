@@ -1,0 +1,85 @@
+﻿@page
+@model CO659_TeamApp.Pages.Practitioners.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Practitioner</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Practitioner.PractitionerTitle" class="control-label"></label>
+                <input asp-for="Practitioner.PractitionerTitle" class="form-control" />
+                <span asp-validation-for="Practitioner.PractitionerTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Practitioner.PractitionerDept" class="control-label"></label>
+                <input asp-for="Practitioner.PractitionerDept" class="form-control" />
+                <span asp-validation-for="Practitioner.PractitionerDept" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Practitioner.PersonID" />
+            <div class="form-group">
+                <label asp-for="Practitioner.FirstName" class="control-label"></label>
+                <input asp-for="Practitioner.FirstName" class="form-control" />
+                <span asp-validation-for="Practitioner.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Practitioner.LastName" class="control-label"></label>
+                <input asp-for="Practitioner.LastName" class="form-control" />
+                <span asp-validation-for="Practitioner.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Practitioner.DOB" class="control-label"></label>
+                <input asp-for="Practitioner.DOB" class="form-control" />
+                <span asp-validation-for="Practitioner.DOB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Practitioner.AddressHouseNo" class="control-label"></label>
+                <input asp-for="Practitioner.AddressHouseNo" class="form-control" />
+                <span asp-validation-for="Practitioner.AddressHouseNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Practitioner.AddressStreet" class="control-label"></label>
+                <input asp-for="Practitioner.AddressStreet" class="form-control" />
+                <span asp-validation-for="Practitioner.AddressStreet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Practitioner.AddressLineTwo" class="control-label"></label>
+                <input asp-for="Practitioner.AddressLineTwo" class="form-control" />
+                <span asp-validation-for="Practitioner.AddressLineTwo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Practitioner.AddressTownCity" class="control-label"></label>
+                <input asp-for="Practitioner.AddressTownCity" class="form-control" />
+                <span asp-validation-for="Practitioner.AddressTownCity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Practitioner.AddressPostcode" class="control-label"></label>
+                <input asp-for="Practitioner.AddressPostcode" class="form-control" />
+                <span asp-validation-for="Practitioner.AddressPostcode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Practitioner.MobileNumber" class="control-label"></label>
+                <input asp-for="Practitioner.MobileNumber" class="form-control" />
+                <span asp-validation-for="Practitioner.MobileNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

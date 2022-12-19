@@ -9,54 +9,28 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace CO659_TeamApp.Data.Migrations
+namespace CO659_TeamApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221213201117_InitialCreate")]
+    [Migration("20221219163620_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.10")
+                .HasAnnotation("ProductVersion", "6.0.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("CO659_TeamApp.Models.Account", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
-
-                    b.Property<string>("AccountEmail")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.Property<int>("AccountLevel")
-                        .HasColumnType("int");
-
-                    b.Property<string>("AccountPassword")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Accounts");
-                });
-
             modelBuilder.Entity("CO659_TeamApp.Models.Appointment", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("AppointmentID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AppointmentID"), 1L, 1);
 
                     b.Property<DateTime>("ApptDate")
                         .HasColumnType("datetime2");
@@ -67,28 +41,28 @@ namespace CO659_TeamApp.Data.Migrations
                     b.Property<DateTime>("BookingDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("PatientID")
+                    b.Property<int>("PersonID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PractitionerID")
+                    b.Property<int?>("PractitionersPersonID")
                         .HasColumnType("int");
 
-                    b.HasKey("ID");
+                    b.HasKey("AppointmentID");
 
-                    b.HasIndex("PatientID");
+                    b.HasIndex("PersonID");
 
-                    b.HasIndex("PractitionerID");
+                    b.HasIndex("PractitionersPersonID");
 
                     b.ToTable("Appointments");
                 });
 
             modelBuilder.Entity("CO659_TeamApp.Models.Medicine", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("MedicineID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MedicineID"), 1L, 1);
 
                     b.Property<bool?>("IsAvailable")
                         .IsRequired()
@@ -112,21 +86,23 @@ namespace CO659_TeamApp.Data.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
-                    b.HasKey("ID");
+                    b.Property<int>("PrescriptionID")
+                        .HasColumnType("int");
+
+                    b.HasKey("MedicineID");
+
+                    b.HasIndex("PrescriptionID");
 
                     b.ToTable("Medicines");
                 });
 
-            modelBuilder.Entity("CO659_TeamApp.Models.Patient", b =>
+            modelBuilder.Entity("CO659_TeamApp.Models.Person", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("PersonID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
-
-                    b.Property<int?>("AccountID")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PersonID"), 1L, 1);
 
                     b.Property<string>("AddressHouseNo")
                         .IsRequired()
@@ -152,85 +128,44 @@ namespace CO659_TeamApp.Data.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
+                    b.Property<DateTime>("DOB")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
                     b.Property<string>("MobileNumber")
                         .IsRequired()
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
-                    b.Property<DateTime>("PatientDOB")
-                        .HasColumnType("datetime2");
+                    b.HasKey("PersonID");
 
-                    b.Property<string>("PatientFName")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                    b.ToTable("People");
 
-                    b.Property<string>("PatientLName")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<int?>("PractitionerID")
-                        .HasColumnType("int");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("AccountID");
-
-                    b.HasIndex("PractitionerID");
-
-                    b.ToTable("Patients");
-                });
-
-            modelBuilder.Entity("CO659_TeamApp.Models.Practitioner", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
-
-                    b.Property<int?>("AccountID")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("PractitionerDept")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PractitionerFName")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<string>("PractitionerLName")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<int?>("PractitionerTitle")
-                        .HasColumnType("int");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("AccountID");
-
-                    b.ToTable("Practitioners");
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Person");
                 });
 
             modelBuilder.Entity("CO659_TeamApp.Models.Prescription", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("PrescriptionID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PrescriptionID"), 1L, 1);
 
-                    b.Property<int?>("MedicinesID")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("PatientID")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("PractitionerID")
+                    b.Property<int>("PersonID")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("PrescriptionDate")
@@ -243,24 +178,23 @@ namespace CO659_TeamApp.Data.Migrations
                         .HasMaxLength(3)
                         .HasColumnType("int");
 
-                    b.HasKey("ID");
+                    b.HasKey("PrescriptionID");
 
-                    b.HasIndex("MedicinesID");
-
-                    b.HasIndex("PatientID");
-
-                    b.HasIndex("PractitionerID");
+                    b.HasIndex("PersonID");
 
                     b.ToTable("Prescriptions");
                 });
 
             modelBuilder.Entity("CO659_TeamApp.Models.Symptom", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("SymtomID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SymtomID"), 1L, 1);
+
+                    b.Property<int>("AppointmentID")
+                        .HasColumnType("int");
 
                     b.Property<string>("SymptomDetails")
                         .IsRequired()
@@ -280,7 +214,10 @@ namespace CO659_TeamApp.Data.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.HasKey("ID");
+                    b.HasKey("SymtomID");
+
+                    b.HasIndex("AppointmentID")
+                        .IsUnique();
 
                     b.ToTable("Symptoms");
                 });
@@ -487,54 +424,67 @@ namespace CO659_TeamApp.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("CO659_TeamApp.Models.Appointment", b =>
-                {
-                    b.HasOne("CO659_TeamApp.Models.Patient", null)
-                        .WithMany("Appointments")
-                        .HasForeignKey("PatientID");
-
-                    b.HasOne("CO659_TeamApp.Models.Practitioner", null)
-                        .WithMany("Appointments")
-                        .HasForeignKey("PractitionerID");
-                });
-
-            modelBuilder.Entity("CO659_TeamApp.Models.Patient", b =>
-                {
-                    b.HasOne("CO659_TeamApp.Models.Account", "Account")
-                        .WithMany()
-                        .HasForeignKey("AccountID");
-
-                    b.HasOne("CO659_TeamApp.Models.Practitioner", null)
-                        .WithMany("Patients")
-                        .HasForeignKey("PractitionerID");
-
-                    b.Navigation("Account");
-                });
-
             modelBuilder.Entity("CO659_TeamApp.Models.Practitioner", b =>
                 {
-                    b.HasOne("CO659_TeamApp.Models.Account", "Account")
-                        .WithMany()
-                        .HasForeignKey("AccountID");
+                    b.HasBaseType("CO659_TeamApp.Models.Person");
 
-                    b.Navigation("Account");
+                    b.Property<int?>("PractitionerDept")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("PractitionerTitle")
+                        .HasColumnType("int");
+
+                    b.HasDiscriminator().HasValue("Practitioner");
+                });
+
+            modelBuilder.Entity("CO659_TeamApp.Models.Appointment", b =>
+                {
+                    b.HasOne("CO659_TeamApp.Models.Person", "People")
+                        .WithMany()
+                        .HasForeignKey("PersonID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CO659_TeamApp.Models.Practitioner", "Practitioners")
+                        .WithMany()
+                        .HasForeignKey("PractitionersPersonID");
+
+                    b.Navigation("People");
+
+                    b.Navigation("Practitioners");
+                });
+
+            modelBuilder.Entity("CO659_TeamApp.Models.Medicine", b =>
+                {
+                    b.HasOne("CO659_TeamApp.Models.Prescription", "Prescriptions")
+                        .WithMany("Medicines")
+                        .HasForeignKey("PrescriptionID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Prescriptions");
                 });
 
             modelBuilder.Entity("CO659_TeamApp.Models.Prescription", b =>
                 {
-                    b.HasOne("CO659_TeamApp.Models.Medicine", "Medicines")
-                        .WithMany("Prescriptions")
-                        .HasForeignKey("MedicinesID");
+                    b.HasOne("CO659_TeamApp.Models.Person", "People")
+                        .WithMany()
+                        .HasForeignKey("PersonID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("CO659_TeamApp.Models.Patient", null)
-                        .WithMany("Prescriptions")
-                        .HasForeignKey("PatientID");
+                    b.Navigation("People");
+                });
 
-                    b.HasOne("CO659_TeamApp.Models.Practitioner", null)
-                        .WithMany("Prescriptions")
-                        .HasForeignKey("PractitionerID");
+            modelBuilder.Entity("CO659_TeamApp.Models.Symptom", b =>
+                {
+                    b.HasOne("CO659_TeamApp.Models.Appointment", "Appointments")
+                        .WithOne("Symptoms")
+                        .HasForeignKey("CO659_TeamApp.Models.Symptom", "AppointmentID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("Medicines");
+                    b.Navigation("Appointments");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -588,25 +538,14 @@ namespace CO659_TeamApp.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("CO659_TeamApp.Models.Medicine", b =>
+            modelBuilder.Entity("CO659_TeamApp.Models.Appointment", b =>
                 {
-                    b.Navigation("Prescriptions");
+                    b.Navigation("Symptoms");
                 });
 
-            modelBuilder.Entity("CO659_TeamApp.Models.Patient", b =>
+            modelBuilder.Entity("CO659_TeamApp.Models.Prescription", b =>
                 {
-                    b.Navigation("Appointments");
-
-                    b.Navigation("Prescriptions");
-                });
-
-            modelBuilder.Entity("CO659_TeamApp.Models.Practitioner", b =>
-                {
-                    b.Navigation("Appointments");
-
-                    b.Navigation("Patients");
-
-                    b.Navigation("Prescriptions");
+                    b.Navigation("Medicines");
                 });
 #pragma warning restore 612, 618
         }
