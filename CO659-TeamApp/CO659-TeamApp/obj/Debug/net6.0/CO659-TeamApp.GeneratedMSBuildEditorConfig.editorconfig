@@ -8,165 +8,165 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CO659_TeamApp
 build_property.RootNamespace = CO659_TeamApp
-build_property.ProjectDir = C:\repos\CO659-TeamApp\CO659-TeamApp\CO659-TeamApp\
+build_property.ProjectDir = C:\Users\Haroon\Documents\GitHub\CO659-TeamApp\CO659-TeamApp\CO659-TeamApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\repos\CO659-TeamApp\CO659-TeamApp\CO659-TeamApp
+build_property.MSBuildProjectDirectory = C:\Users\Haroon\Documents\GitHub\CO659-TeamApp\CO659-TeamApp\CO659-TeamApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Create.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Delete.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Details.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Edit.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Index.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Accounts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Error.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Index.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Create.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Delete.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Details.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Edit.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Index.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Medicines/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Create.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Delete.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Details.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Edit.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Index.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Patients/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Create.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJhY3RpdGlvbmVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Delete.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJhY3RpdGlvbmVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Details.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJhY3RpdGlvbmVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Edit.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJhY3RpdGlvbmVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Index.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Practitioners/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJhY3RpdGlvbmVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Create.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Delete.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Details.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Edit.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Index.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Prescriptions/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Privacy.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Shared/_LoginPartial.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Create.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ltcHRvbXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Delete.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ltcHRvbXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Details.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ltcHRvbXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Edit.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ltcHRvbXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Index.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Symptoms/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ltcHRvbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/_ViewImports.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/_ViewStart.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Shared/_Layout.cshtml]
+[C:/Users/Haroon/Documents/GitHub/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7txawrlf8u
