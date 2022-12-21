@@ -1,5 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
+<!-- Patient layout -->
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,19 +23,14 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/About">About</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Appointments/Index">Appointments</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Patients/Index">Patients</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Patients/Index">Prescriptions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Courses/Index">Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Instructors/Index">Instructors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Departments/Index">Departments</a>
+                            <!-- Insert directory for Contact page in asp-page attribute -->
+                            <a class="nav-link text-dark" asp-area="" asp-page="#">Contact Us</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
