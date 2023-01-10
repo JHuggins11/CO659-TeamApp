@@ -170,3 +170,7 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7txawrlf8u
+
+[C:/repos/CO659-TeamApp/CO659-TeamApp/CO659-TeamApp/Pages/Shared/_PractitionerLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9QcmFjdGl0aW9uZXJMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-mq511b4rei
